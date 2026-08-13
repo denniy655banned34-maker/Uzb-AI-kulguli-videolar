@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uzb AI Kulguli Videolar — Funny AI Videos</title>
+  <meta name="description" content="A modern collection of Uzbek AI-generated funny videos. Mobile-first dark UI with smooth animations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">UzbAI</a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-ghost" href="#features">Get Started</a>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="fade-up">Uzbek AI Kulguli Videolar</h1>
+          <p class="lead fade-up" style="--delay:120ms">Discover short, hilarious AI-generated Uzbek videos crafted to make you laugh. Mobile-friendly and fast.</p>
+          <div class="hero-cta fade-up" style="--delay:240ms">
+            <a class="btn btn-primary" href="#videos">Explore Videos</a>
+            <a class="btn btn-outline" href="#contact">Submit Idea</a>
+          </div>
+        </div>
+        <div class="hero-media fade-in" style="--delay:360ms" aria-hidden="true">
+          <div class="phone-mock">
+            <div class="glow"></div>
+            <div class="screen">
+              <div class="video-thumb">AI Video Preview</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid">
+          <article class="card reveal">
+            <h3>Mobile-first</h3>
+            <p>Designed to look and feel native on phones with thumb-friendly controls.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Dark Design</h3>
+            <p>Eye-friendly dark theme with high contrast and subtle neon accents.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Smooth Animations</h3>
+            <p>Lightweight CSS animations and intersection observer reveals for performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section videos">
+      <div class="container">
+        <h2 class="section-title">Latest Videos</h2>
+        <p class="muted">Placeholder grid for video thumbnails (replace with real content)</p>
+        <div class="video-grid">
+          <div class="video-card reveal">Video 1</div>
+          <div class="video-card reveal">Video 2</div>
+          <div class="video-card reveal">Video 3</div>
+          <div class="video-card reveal">Video 4</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="muted">Send ideas or feedback — we love hearing from you.</p>
+        <form class="contact-form" action="#" onsubmit="handleSubmit(event)">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your idea or feedback"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Uzb AI Kulguli Videolar — Built with ❤️</p>
+      <p class="muted">Ready to deploy on Vercel.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
